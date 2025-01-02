@@ -20,3 +20,11 @@ pets = [pet_0, pet_1, pet_2]
 
 for pet in pets:
     print(f"{pet['name'].title()} is a {pet['type']} owned by {pet['owner'].title()}.")
+
+pets = ["dog", "cat", "dog", "goldfish", "cat", "rabbit", "cat"]
+print(pets)
+
+while "cat" in pets:
+    pets.remove("cat")
+
+print(pets)

@@ -24,3 +24,22 @@ for city, city_info in cities.items():
     print(f"\n{city.title()} is in {country.title()}.")
     print(f"It has a population of about {population}.")
     print(f"{fact}")
+
+prompt = "\nTell me the name of a city, and I'll tell you some information about it."
+prompt += "\nEnter 'quit' to end the program.\n"
+
+while True:
+    city = input(prompt)
+    city = city.lower()
+    
+    if city == 'quit':
+        break
+    elif city in cities:
+        country = cities[city]['country']
+        population = cities[city]['population']
+        fact = cities[city]['fact']
+        print(f"\n{city.title()} is in {country.title()}.")
+        print(f"It has a population of about {population}.")
+        print(f"{fact}")
+    else:
+        print(f"Sorry, I don't know anything about {city}.")
