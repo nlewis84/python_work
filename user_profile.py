@@ -1,0 +1,17 @@
+def build_profile(first_name, last_name, **user_info):
+    """Build a dictionary containing everything we know about a user."""
+    profile = {}
+    profile["first_name"] = first_name
+    profile["last_name"] = last_name
+    for key, value in user_info.items():
+        profile[key] = value
+    return profile
+
+
+users = build_profile("albert", "einstein", location="princeton", field="physics")
+print(users)
+
+user = build_profile(
+    "nathan", "lewis", location="McKinney", title="senior software engineer", age=40
+)
+print(user)
