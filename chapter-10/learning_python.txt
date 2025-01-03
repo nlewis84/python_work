@@ -1,0 +1,6 @@
+In Python you can automate tasks, analyze data, and build web applications.
+In Python you can code on the backend, frontend, or full stack.
+In Python you can use multiple programming paradigms, including procedural, object-oriented, and functional programming.
+In Python you can create machine learning models and perform data analysis.
+In Python you can develop games and graphical user interfaces.
+In Python you can work with big data and cloud computing.
