@@ -53,3 +53,14 @@ for person in people:
     print(f"\tHair Color: {person['hair_color']}")
     print(f"\tEye Color: {person['eye_color']}")
     print(f"\tOccupation: {person['occupation']}")
+
+
+def build_person(first_name, last_name, age=None):
+    """Return a dictionary of information about a person."""
+    person = {"first": first_name, "last": last_name, "age": age}
+    return person
+
+
+jedi_knight = build_person("obi-wan", "kenobi", 57)
+print(jedi_knight)
+
